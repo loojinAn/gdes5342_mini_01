@@ -1,0 +1,262 @@
+/*
+font-family: chelsea-market-pro,sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes colorchange01 {
+	0% {background: #ffcccc;}
+  20% {background: #ffccff;}
+  40% {background: #ccccff;}
+  60% {background: #ccffff;}
+  80% {background: #ccffcc;}
+  100% {background: #ffffcc;}
+}
+
+@keyframes colorchange02 {
+  0% {color: #ff6666;}
+  20% {color: #ff66ff;}
+  40% {color: #6699ff;}
+  60% {color: #00ffff;}
+  80% {color: #66ff66;}
+  100% {color: #ffff66;}
+}
+
+@keyframes colorchange03 {
+  0% {color: #7CFC00; opacity: 0;}
+  100% {color: white; opacity: 1;}
+}
+
+@keyframes showpaw {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 1;}
+}
+
+.dustcover_container {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -300px;
+	margin-left: -300px;
+	background: url(../images/lawn.jpg);
+	background-size: 215%;
+	overflow: hidden;
+}
+
+/* class for paw */
+.paw01 {
+	width: 90px;
+	height: 90px;
+	/* border: white 1px solid; */
+	background: url(../images/dirt_cut.png);
+	background-size: 100%;
+	position: absolute;
+	left: 230px;
+	top: 60px;
+	animation: showpaw 3s infinite alternate;
+}
+
+.paw02 {
+	width: 90px;
+	height: 90px;
+	/* border: white 1px solid; */
+	background: url(../images/dirt_cut.png);
+	background-size: 100%;
+	position: absolute;
+	left: 100px;
+	top: 200px;
+	animation: showpaw 3s infinite alternate;
+	animation-delay: 0.5s;
+}
+
+.paw03 {
+	width: 90px;
+	height: 90px;
+	/* border: white 1px solid; */
+	background: url(../images/dirt_cut.png);
+	background-size: 100%;
+	position: absolute;
+	left: 50px;
+	top: 400px;
+	animation: showpaw 3s infinite alternate;
+	animation-delay: 1s;
+}
+
+/* class for "Sleepy Time Tales" box */
+.lefttext_container {
+	width: 70px;
+	top: 35px;
+	padding: 20px 23px 20px 23px;
+	position: absolute;
+	text-align: center;
+	animation: colorchange01 10s infinite alternate;
+}
+
+.lefttext {
+	color: #ff6666;
+	font-family: chelsea-market-pro,sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.2px;
+	animation: colorchange02 10s infinite alternate;
+}
+
+/* class for "Arthur Scott Bailey" box */
+.righttext_container {
+	width: 200px;
+	right: 40px;
+	bottom: 40px;
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	text-align: center;
+	animation: colorchange01 10s infinite alternate;
+}
+
+.righttext {
+	color: #ff6666;
+	font-family: chelsea-market-pro,sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.2px;
+	animation: colorchange02 10s infinite alternate;
+}
+
+/* class for title "The Tale of Benny Badger" */
+.title_container {
+	width: 250px;
+	height: 450px;
+	top: 65px;
+	left: 300px;
+	position: absolute;
+	text-align: right;
+}
+
+.title {
+	font-family: chelsea-market-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.2px;
+	color: white;
+}
+
+.a {
+	font-size: 75px;
+	width: 200px;
+	margin-left: 40px;
+}
+
+.b {
+	font-size: 90px;
+	width: 400px;
+	margin-left: -145px;
+}
+
+/* class for cover and hover */
+.cover_container {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -300px;
+	margin-left: -300px;
+	z-index: 1;
+}
+
+.cover_container span {
+	display: block;
+	width: 0px;
+	height: 600px;
+	background: url(../images/dirt.jpg);
+	background-size: 100%;
+	transition: 0.7s all;
+	position: relative;
+}
+
+.dustcover_container:hover .cover_container span {
+	width: 600px;
+}
+
+/* class for "Sleepy Time Tales" box after hover */
+.lefttext_container_hover {
+	width: 70px;
+	right: 485px;
+	top: 35px;
+	padding: 20px 23px 20px 23px;
+	position: absolute;
+	text-align: center;
+	background: white;
+}
+
+.lefttext_hover {
+	color: #9ACD32;
+	font-family: chelsea-market-pro,sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.2px;
+}
+
+/* class for "Arthur Scott Bailey" box after hover */
+.righttext_container_hover {
+	width: 200px;
+	right: 40px;
+	bottom: 40px;
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	text-align: center;
+	background: white;
+}
+
+.righttext_hover {
+	color: #9ACD32;
+	font-family: chelsea-market-pro,sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.2px;
+}
+
+/* class for title "The Tale of Benny Badger" after hover */
+.title_container_hover {
+	width: 250px;
+	height: 450px;
+	top: 65px;
+	right: 50px;
+	position: absolute;
+	text-align: right;
+}
+
+.title_hover {
+	font-family: chelsea-market-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.2px;
+	color: #7CFC00;
+	animation: colorchange03 3s infinite alternate ease-in-out;
+}
+
+.a {
+	font-size: 75px;
+	width: 200px;
+	margin-left: 40px;
+}
+
+.b {
+	font-size: 90px;
+	width: 400px;
+	margin-left: -145px;
+}
+
+
+/* last line */
